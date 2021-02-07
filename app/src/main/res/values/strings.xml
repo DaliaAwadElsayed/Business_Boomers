@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Business Boomers</string>
+    <string name="string_email">Email</string>
+    <string name="string_pass">Password</string>
+    <string name="string_login">Login</string>
+    <string name="string_google">Login with Google</string>
+    <string name="string_pass_condition">Password must be more than 7 characters</string>
+    <string name="string_email_condition">Enter valid Email!</string>
+    <string name="string_success">Success Login</string>
+    <string name="string_wlc">Welcome</string>
+
+</resources>

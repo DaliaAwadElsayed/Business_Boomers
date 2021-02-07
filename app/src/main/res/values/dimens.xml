@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_margin">@dimen/_12sdp</dimen>
+    <dimen name="medium_margin">@dimen/_16sdp</dimen>
+    <dimen name="large_margin">@dimen/_32sdp</dimen>
+    <dimen name="small_text_size">@dimen/_12sdp</dimen>
+    <dimen name="medium_text_size">@dimen/_14sdp</dimen>
+    <dimen name="large_text_size">@dimen/_16sdp</dimen>
+
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/small_margin"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:paddingStart="@dimen/small_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:textColorHint="@color/colorAccent"
+                >
+
+                <com.mindorks.editdrawabletext.EditDrawableText
+                    android:id="@+id/email_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="@string/string_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/small_margin"
+                    android:paddingBottom="@dimen/small_margin" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_margin"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:paddingStart="@dimen/small_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:textColorHint="@color/colorAccent"
+                app:passwordToggleEnabled="true"
+                >
+
+                <com.mindorks.editdrawabletext.EditDrawableText
+                    android:id="@+id/pass_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="@string/string_pass"
+                    android:inputType="textPassword"
+                    android:paddingTop="@dimen/small_margin"
+                    android:paddingBottom="@dimen/small_margin"
+                    android:textDirection="ltr" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/login_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/small_margin"
+                android:background="@color/colorPrimaryDark"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/string_login"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/google_sign_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/small_margin"
+                android:background="@drawable/bk_rectangel"
+                android:drawableLeft="@drawable/ic_search"
+                android:drawablePadding="@dimen/small_margin"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:padding="@dimen/small_margin"
+                android:text="@string/string_google"
+                android:textAllCaps="false"
+                android:textSize="@dimen/medium_text_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</layout>
