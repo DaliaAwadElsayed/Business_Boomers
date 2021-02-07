@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
             if (account != null) {
-                Toast.makeText(this, R.string.string_wlc + " " + account.getDisplayName(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, getResources().getString(R.string.string_wlc) + " " + account.getDisplayName(), Toast.LENGTH_SHORT).show();
             }
         } catch (ApiException e) {
             Log.w("signInResult:failedcode", String.valueOf(e.getStatusCode()));
